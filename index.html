@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa sobre o Funcionamento do Olho</title>
+    <style>
+        /* --- ESTILOS GERAIS --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.7;
+            padding-bottom: 60px;
+        }
+
+        /* --- CABEÇALHO --- */
+        header {
+            background-color: #e0f2fe; /* Azul Claro Soft */
+            border-bottom: 4px solid #38bdf8;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: #0369a1;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: #0c4a6e;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* --- NAVEGAÇÃO / SUMÁRIO --- */
+        nav {
+            background: #f0f9ff;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #bae6fd;
+        }
+        nav h3 {
+            color: #0284c7;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+        nav a {
+            background: #ffffff;
+            color: #0369a1;
+            padding: 6px 12px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: 1px solid #7dd3fc;
+            transition: all 0.3s;
+        }
+        nav a:hover {
+            background: #38bdf8;
+            color: white;
+        }
+
+        /* --- CONTEÚDO PRINCIPAL --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-card {
+            background: #ffffff;
+            border-left: 5px solid #38bdf8; /* Detalhe em Azul Claro */
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 0 12px 12px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* --- DESTAQUES EM VERMELHO CLARO (IMPORTANTE) --- */
+        .important-card {
+            border-left: 5px solid #f87171 !important; /* Vermelho Claro */
+            background-color: #fef2f2;
+        }
+        .important-card h2 {
+            color: #dc2626 !important;
+        }
+
+        h2 {
+            color: #0284c7;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            color: #0369a1;
+            margin: 15px 0 10px 0;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* BANNER / ALERTAS EM VERMELHO CLARO */
+        .badge-red {
+            background-color: #fca5a5;
+            color: #7f1d1d;
+            font-size: 0.8rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .badge-blue {
+            background-color: #bae6fd;
+            color: #0369a1;
+            font-size: 0.8rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .mito-verdade {
+            background: #fff;
+            border: 1px solid #fca5a5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .mito-verdade strong {
+            color: #dc2626;
+        }
+
+        /* --- RODAPÉ --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f0f9ff;
+            color: #0369a1;
+            border-top: 1px solid #bae6fd;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>👁️ Pesquisa sobre o Funcionamento do Olho</h1>
+        <p>Uma exploração completa sobre Óptica, Ciência, Acessibilidade e Tecnologias Assistivas.</p>
+    </header>
+
+    <div class="container">
+        <nav>
+            <h3>Índice do Conteúdo:</h3>
+            <ul>
+                <li><a href="#sec1">1. Como enxergamos?</a></li>
+                <li><a href="#sec2">2. A Física da Visão</a></li>
+                <li><a href="#sec3">3. Deficiência Visual</a></li>
+                <li><a href="#sec4">4. Óculos & Lentes</a></li>
+                <li><a href="#sec5">5. IA na Visão</a></li>
+                <li><a href="#sec6">6. Tecnologias Assistivas</a></li>
+                <li><a href="#sec7">7. Física do Som</a></li>
+                <li><a href="#sec8">8. Curiosidades</a></li>
+                <li><a href="#sec9">9. Experimentos</a></li>
+                <li><a href="#sec10">10. Você Sabia?</a></li>
+                <li><a href="#sec11">11. Cientistas</a></li>
+                <li><a href="#sec12">12. Desafios</a></li>
+                <li><a href="#sec13">13. Notícias</a></li>
+                <li><a href="#sec14">14. Mitos e Verdades</a></li>
+            </ul>
+        </nav>
+
+        <section id="sec1" class="section-card">
+            <h2>1. Como enxergamos?</h2>
+            <p>O olho humano funciona como uma câmera. A luz entra pela córnea, passa pela pupila e pelo cristalino, que focaliza a imagem na retina. Na retina, a luz é transformada em sinais elétricos, que seguem pelo nervo óptico até o cérebro, onde a imagem é interpretada.</p>
+            <h3>Partes do olho:</h3>
+            <ul>
+                <li><strong>Córnea:</strong> protege o olho e inicia o foco da luz.</li>
+                <li><strong>Pupila:</strong> controla a entrada de luz.</li>
+                <li><strong>Cristalino:</strong> focaliza a imagem.</li>
+                <li><strong>Retina:</strong> transforma a luz em impulsos nervosos.</li>
+                <li><strong>Nervo óptico:</strong> leva as informações ao cérebro.</li>
+            </ul>
+        </section>
+
+        <section id="sec2" class="section-card">
+            <h2>2. A Física da Visão</h2>
+            <p>A luz é uma forma de energia que faz parte do espectro eletromagnético. O ser humano enxerga apenas a faixa da luz visível. A reflexão permite que os objetos reflitam luz até nossos olhos, enquanto a refração muda a direção da luz ao passar por diferentes meios, ajudando a formar a imagem na retina.</p>
+            <p>As cores surgem porque cada objeto absorve algumas cores da luz e reflete outras. A cor refletida é a que enxergamos.</p>
+        </section>
+
+        <section id="sec3" class="section-card important-card">
+            <h2>3. Deficiência visual: o que acontece? <span class="badge-red">Importante</span></h2>
+            <p>A deficiência visual pode ocorrer por diferentes causas:</p>
+            <ul>
+                <li><strong>Cegueira:</strong> perda total ou quase total da visão.</li>
+                <li><strong>Baixa visão:</strong> permite enxergar apenas parcialmente, mesmo com o uso de óculos.</li>
+                <li><strong>Catarata:</strong> acontece quando o cristalino fica opaco, dificultando a passagem da luz.</li>
+                <li><strong>Glaucoma:</strong> danifica o nervo óptico, comprometendo a transmissão das imagens ao cérebro.</li>
+                <li><strong>Degeneração macular:</strong> afeta a parte central da retina, prejudicando a visão dos detalhes.</li>
+                <li><strong>Daltonismo:</strong> dificulta a diferenciação de algumas cores devido a alterações nas células da retina.</li>
+            </ul>
+            <p>Todas essas condições estão relacionadas à Física da visão, pois alteram a passagem da luz, a formação da imagem ou a percepção das cores.</p>
+        </section>
+
+        <section id="sec4" class="section-card">
+            <h2>4. Como funcionam os óculos?</h2>
+            <p>Os óculos corrigem problemas de visão modificando o caminho da luz antes que ela chegue à retina.</p>
+            <ul>
+                <li><strong>Lentes divergentes:</strong> usadas para corrigir a <em>miopia</em> (dificuldade para enxergar objetos distantes).</li>
+                <li><strong>Lentes convergentes:</strong> corrigem a <em>hipermetropia</em> (dificuldade para ver de perto).</li>
+                <li><strong>Lentes especiais:</strong> compensam a curvatura irregular da córnea no <em>astigmatismo</em>, proporcionando uma imagem mais nítida.</li>
+            </ul>
+            <p>Esse funcionamento é um exemplo prático da aplicação da Óptica no dia a dia.</p>
+        </section>
+
+        <section id="sec5" class="section-card">
+            <h2>5. Inteligência Artificial ajudando pessoas com deficiência visual</h2>
+            <p>A Inteligência Artificial tem facilitado a vida das pessoas com deficiência visual. Por meio de câmeras e programas inteligentes, ela consegue reconhecer objetos, ler placas e textos, descrever imagens, identificar rostos e até reconhecer cédulas de dinheiro. As informações são transmitidas ao usuário por voz, aumentando sua autonomia e segurança.</p>
+        </section>
+
+        <section id="sec6" class="section-card">
+            <h2>6. Tecnologias Assistivas</h2>
+            <p>Recursos que ajudam pessoas com deficiência visual a estudar, trabalhar e realizar atividades do cotidiano:</p>
+            <ul>
+                <li><strong>Leitores de tela:</strong> transformam textos em áudio.</li>
+                <li><strong>Linhas e impressoras Braille:</strong> permitem a leitura em relevo.</li>
+                <li><strong>Lupas eletrônicas:</strong> ampliam imagens.</li>
+                <li><strong>Óculos inteligentes:</strong> utilizam câmeras e IA.</li>
+                <li><strong>Aplicativos de acessibilidade:</strong> oferecem navegação por voz e descrição de imagens.</li>
+            </ul>
+        </section>
+
+        <section id="sec7" class="section-card">
+            <h2>7. Física do Som</h2>
+            <p>O som pode substituir informações visuais em diversas situações. A audiodescrição narra cenas de filmes e eventos, enquanto sensores sonoros e aplicativos de voz ajudam na orientação. Algumas pessoas também utilizam a <strong>ecolocalização</strong>, produzindo sons e percebendo o eco para identificar obstáculos e objetos ao redor.</p>
+        </section>
+
+        <section id="sec8" class="section-card">
+            <h2>8. Curiosidades Científicas</h2>
+            <p>Mesmo sem enxergar, muitas pessoas utilizam smartphones com leitores de tela, que leem em voz alta tudo o que aparece na tela. O sistema Braille permite a leitura por meio de pontos em relevo. Os cães-guia passam por treinamento especializado para auxiliar na locomoção de pessoas cegas. Além disso, semáforos sonoros e aplicativos com Inteligência Artificial ajudam na mobilidade e na identificação de imagens e objetos.</p>
+        </section>
+
+        <section id="sec9" class="section-card">
+            <h2>9. Experimentos Práticos</h2>
+            <p>Experimentos simples ajudam a compreender os fenômenos da Óptica:</p>
+            <ul>
+                <li><strong>Copo com água:</strong> demonstra a refração da luz.</li>
+                <li><strong>Espelhos:</strong> mostram a reflexão.</li>
+                <li><strong>Lupas:</strong> evidenciam o funcionamento das lentes.</li>
+                <li><strong>Prismas:</strong> permitem observar a formação das cores.</li>
+                <li><strong>Ilusões de óptica:</strong> mostram como o cérebro interpreta as imagens.</li>
+            </ul>
+        </section>
+
+        <section id="sec10" class="section-card important-card">
+            <h2>10. Você sabia? <span class="badge-red">Destaque</span></h2>
+            <ul>
+                <li>O olho humano consegue distinguir <strong>milhões de cores</strong>.</li>
+                <li>Pessoas cegas podem utilizar celulares normalmente com a ajuda de leitores de tela.</li>
+                <li>Existem aplicativos que usam Inteligência Artificial para descrever fotografias, reconhecer objetos e ler textos em voz alta.</li>
+            </ul>
+        </section>
+
+        <section id="sec11" class="section-card">
+            <h2>11. Cientistas que contribuíram para o estudo da visão</h2>
+            <ul>
+                <li><strong>Isaac Newton:</strong> demonstrou que a luz branca é formada por várias cores.</li>
+                <li><strong>Thomas Young:</strong> desenvolveu a teoria tricromática da visão das cores.</li>
+                <li><strong>Hermann von Helmholtz:</strong> aprofundou os estudos sobre o funcionamento do olho humano e da percepção visual.</li>
+                <li><strong>Louis Braille:</strong> criou o sistema Braille, que revolucionou a leitura e a escrita para pessoas com deficiência visual.</li>
+            </ul>
+        </section>
+
+        <section id="sec12" class="section-card">
+            <h2>12. Desafios para os Visitantes</h2>
+            <p>Os visitantes podem participar de atividades para compreender melhor os desafios enfrentados por pessoas com deficiência visual:</p>
+            <ul>
+                <li>Identificar objetos apenas pelo som.</li>
+                <li>Experimentar um leitor de tela.</li>
+                <li>Caminhar vendado com a orientação de um colega em um ambiente seguro.</li>
+                <li>Descobrir qual objeto está emitindo determinado som.</li>
+            </ul>
+            <p><em>Essas experiências promovem empatia e mostram a importância das tecnologias assistivas.</em></p>
+        </section>
+
+        <section id="sec13" class="section-card">
+            <h2>13. Notícias e Avanços Tecnológicos</h2>
+            <p>Pesquisas recentes mostram grandes avanços na área da visão. Novos óculos inteligentes com Inteligência Artificial conseguem reconhecer objetos, responder a comandos de voz e auxiliar pessoas com deficiência visual. Também estão sendo desenvolvidos implantes de retina e tecnologias de visão artificial, que podem devolver parte da visão a alguns pacientes. Além disso, a IA está sendo usada na medicina para analisar exames e ajudar no diagnóstico precoce de doenças oculares.</p>
+        </section>
+
+        <section id="sec14" class="section-card important-card">
+            <h2>14. Mitos e Verdades <span class="badge-red">Atenção</span></h2>
+            
+            <div class="mito-verdade">
+                <p><strong>"Ler no escuro causa cegueira?"</strong></p>
+                <p><strong>Mito.</strong> Ler com pouca luz pode causar cansaço visual, mas não provoca cegueira.</p>
+            </div>
+
+            <div class="mito-verdade">
+                <p><strong>"Usar óculos faz o grau aumentar?"</strong></p>
+                <p><strong>Mito.</strong> Os óculos apenas corrigem a visão; o aumento do grau ocorre pela evolução natural da condição.</p>
+            </div>
+
+            <div class="mito-verdade">
+                <p><strong>"Toda pessoa cega enxerga apenas preto?"</strong></p>
+                <p><strong>Mito.</strong> Existem diferentes tipos de cegueira. Algumas pessoas percebem luz, sombras ou formas, enquanto outras não têm percepção visual.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Projeto de Pesquisa Científica — O Funcionamento do Olho Humano</p>
+    </footer>
+
+</body>
+</html>
