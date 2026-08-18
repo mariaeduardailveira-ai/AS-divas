@@ -1,113 +1,86 @@
-<!-- INÍCIO DO BLOCO DE APRESENTAÇÃO DO SITE -->
-            <section class="site-intro">
+<<section class="site-intro">
   <div class="intro-container">
-            <h2>Como Funciona o Olho Humano?</h2>
-              <p>
+    <h2>Como Funciona o Olho Humano?</h2>
+    <p>
       O olho humano funciona como uma câmera de alta precisão. A luz entra pela córnea e passa pela pupila, onde a íris ajusta a quantidade de iluminação. Em seguida, o cristalino funciona como uma lente flexível que ajusta o foco de acordo com a distância do objeto. Essa luz chega até a retina, no fundo do olho, onde células especiais captam as cores, os detalhes e o movimento, projetando a imagem inicialmente de cabeça para baixo. Por fim, a retina transforma a luz em sinais elétricos que viajam pelo nervo óptico até o cérebro, que desvira a imagem e interpreta tudo o que estamos vendo em tempo real.
     </p>
   </div>
 </section>
 
 <style>
-          /* Estilo do bloco do topo */
-                  .site-intro {
+  /* Estilo do bloco do topo centralizado */
+  .site-intro {
     background: linear-gradient(135deg, #a7e2fd 0%, #4a7ae0 100%);
-    color: /* Container da seção no final do site */
-           .secao-olho-humano {
-         margin-top: 60px;
-      padding: 40px 20px;
-       background: rgba(15, 15, 30, 0.9);
-       border-top: 2px solid #e0aaff;
-           text-align: center;
-       margin-bottom: 30px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Container para limitar a largura e manter o texto centralizado */
+  .intro-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Container da seção no final do site */
+  .secao-olho-humano {
+    margin-top: 60px;
+    padding: 40px 20px;
+    background: rgba(15, 15, 30, 0.9);
+    border-top: 2px solid #e0aaff;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+</style>
+
+
       
 }
 
-/* Layout em Grid (3 colunas em telas grandes, se ajusta em celulares) */
-.galeria-olhos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
+<section class="site-intro">
+  <div class="intro-container">
+    <h2>Como Funciona o Olho Humano?</h2>
+    <p>
+      O olho humano funciona como uma câmera de alta precisão. A luz entra pela córnea e passa pela pupila, onde a íris ajusta a quantidade de iluminação. Em seguida, o cristalino funciona como uma lente flexível que ajusta o foco de acordo com a distância do objeto. Essa luz chega até a retina, no fundo do olho, onde células especiais captam as cores, os detalhes e o movimento, projetando a imagem inicialmente de cabeça para baixo. Por fim, a retina transforma a luz em sinais elétricos que viajam pelo nervo óptico até o cérebro, que desvira a imagem e interpreta tudo o que estamos vendo em tempo real.
+    </p>
+  </div>
+</section>
 
-/* Cartões de cada imagem */
-.card-olho {
-  background-color: #1a1a2e;
-  border: 1px solid #332d56;
-  border-radius: 12px;
-  padding: 15px;
-  transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.card-olho:hover {
-  transform: translateY(-6px);
-  border-color: #e0aaff;
-  box-shadow: 0 5px 15px rgba(224, 170, 255, 0.2);
-}
-
-.card-olho img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.card-olho h3 {
-  color: #ffffff;
-  font-size: 1.1rem;
-  margin: 12px 0 6px;
-}
-
-.card-olho p {
-  color: #cccccc;
-  font-size: 0.88rem;
-  line-height: 1.4;
-}
-
-/* Enfeites no rodapé da seção */
-.enfeites-decorativos {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.enfeite-icon {
-  width: 40px;
-  height: 40px;
-  opacity: 0.8;
-  filter: drop-shadow(0 0 8px #E6F3FF);;
-    padding: 40px 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+<style>
+  /* Estilo do bloco do topo centralizado */
+  .site-intro {
+    background: linear-gradient(135deg, #a7e2fd 0%, #4a7ae0 100%);
+    color: #ffffff;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
+  /* Container para limitar a largura e manter o texto centralizado */
   .intro-container {
     max-width: 800px;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
   }
 
-  .intro-container h2 {
-    color: #60a5fa; /* Azul destaque */
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
+  /* Container da seção no final do site */
+  .secao-olho-humano {
+    margin-top: 60px;
+    padding: 40px 20px;
+    background: rgba(15, 15, 30, 0.9);
+    border-top: 2px solid #e0aaff;
+    text-align: center;
+    margin-bottom: 30px;
   }
-
-  .intro-container p {
-    line-height: 1.7;
-    font-size: 1.05rem;
-    color: #e5e7eb;
-    margin: 0;
-  }
+</style>
 </style>
 <!-- FIM DO BLOCO -->
 <!DOCTYPE html>
